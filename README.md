@@ -1,6 +1,7 @@
 # Black-Scholes Option Pricer
 
 🔗 **Live App:** https://black-scholes-app-horia.streamlit.app/
+
 This application computes the no-arbitrage European option prices using the Black-Scholes Pricing Model by allowing user to interactively change the parameters.
 
 ### Understanding the Formulas
