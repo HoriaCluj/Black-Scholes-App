@@ -6,15 +6,13 @@ This application computes the no-arbitrage European option prices using the Blac
 
 ### Understanding the Formulas
 The Black-Scholes Model assumes the stock price St at time t is given by the Geometric Brownian Motion (Solution of the SDE).
-- For the European Call: EC(K,T) its price is given by the explicit formula: EC(K,T) = exp(-qT)S0*N(d1) - Kexp(-rT)N(d2)
+- For the European Call: EC(K,T) its price is given by the explicit formula: **`EC(K,T) = exp(-qT)S0*N(d1) - Kexp(-rT)N(d2)`**
   
-- For the European Put: EP(K,T) = -exp(-qT)S0*N(-d1) + Kexp(-rT)N(-d2)
+- For the European Put: **`EP(K,T) = -exp(-qT)S0*N(-d1) + Kexp(-rT)N(-d2)`**
 
-With: d1 = (log(S0/K) + (r - q - σ^2/2)T) / σ√T
+With: **`d1 = (log(S0/K) + (r - q - σ^2/2)T) / σ√T`**, and **`d2 = d1 - σ√T`**
 
-d2 = d1 - σ√T
-
-N(x) is the Cumulative Distribution Function (CDF) of the Standard Normal Distribution ~ N(0,1)
+**`N(x)`** is the Cumulative Distribution Function (CDF) of the Standard Normal Distribution ~ N(0,1)
 
 ### Input Parameters
 **`T`** Time to Maturity
